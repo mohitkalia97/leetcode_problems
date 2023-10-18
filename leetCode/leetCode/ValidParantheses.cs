@@ -42,25 +42,35 @@ namespace leetCode
             {
             Stack<Char> stack = new Stack<Char>();
 
-                if (s[0] == '[' || s[0] == '(')
-                { 
-                    stack.Push(s[0]);
-                    if (s[1] == ']')
-                    {
-                        if(s[1] == stack.Pop())
-                        {
-                            return true;
-                        }
-                    }   
-                 
-                }
-                
-                if (s[0] == ')' || s[0] == ']')
+            foreach (char c in s)
+            {
+                if(c == '(' ||  c == '[' || c == '{')
                 {
-                    return false;
+                    stack.Push(c);
                 }
 
-                return false;
+                else if (c == ')' || c == ']' || c == '}') { 
+
+                    if(stack.Count == 0) { return false; };
+
+                    char parantheseOnStack = stack.Pop();
+
+                    if(c==')' &&  parantheseOnStack != '(')
+                    {
+                        return false;
+                    }
+
+                    if(c==']' && parantheseOnStack != '[')
+                    {
+                        return false;
+                    }
+                    if(c=='}' && parantheseOnStack != '{')
+                    {
+                        return false;
+                    }
+                }
+            }
+            return stack.Count() == 0;
             }
     }
 }

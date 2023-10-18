@@ -19,7 +19,7 @@ namespace test
         {
             bool result = ValidParantheses.IsValid(s);
 
-            Assert.Equals(result, expected);
+            Assert.AreEqual(result, expected);
         }
     }
 

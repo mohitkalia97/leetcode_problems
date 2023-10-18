@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using leetCode;
 
-namespace leetCode
+namespace test
 {
-    internal class TwoSum
+    public class TwoSum
     {
         public int[] getTwoSum(int[] nums, int target)
         {

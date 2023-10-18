@@ -31,9 +31,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using leetCode;
 
 
-namespace leetCode
+namespace test
 {
     [TestClass]
     public class BestTimeToBuyAndSellStockTest

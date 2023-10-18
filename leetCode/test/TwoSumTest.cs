@@ -1,4 +1,6 @@
-namespace leetCode
+using leetCode;
+
+namespace test
 {
     [TestClass]
     public class TwoSumTest

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace leetCode
 {
-    internal class BestTimeToBuyAndSellStock
+    public class BestTimeToBuyAndSellStock
     {
         public static int MaxProfit(int[] prices)
         {

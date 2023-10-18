@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using leetCode;
 
-namespace BinaryTreeTests
+namespace test
 {
     [TestClass]
     public class InvertBinaryTreeTests
