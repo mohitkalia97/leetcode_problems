@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mohit\\Desktop\\Coding\\leetcode\\leetCode\\leetCode\\leetCode.csproj": {}
+    "C:\\Users\\MOH\\Desktop\\Privat\\leetcode_problems\\leetCode\\leetCode\\leetCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mohit\\Desktop\\Coding\\leetcode\\leetCode\\leetCode\\leetCode.csproj": {
+    "C:\\Users\\MOH\\Desktop\\Privat\\leetcode_problems\\leetCode\\leetCode\\leetCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mohit\\Desktop\\Coding\\leetcode\\leetCode\\leetCode\\leetCode.csproj",
+        "projectUniqueName": "C:\\Users\\MOH\\Desktop\\Privat\\leetcode_problems\\leetCode\\leetCode\\leetCode.csproj",
         "projectName": "leetCode",
-        "projectPath": "C:\\Users\\Mohit\\Desktop\\Coding\\leetcode\\leetCode\\leetCode\\leetCode.csproj",
-        "packagesPath": "C:\\Users\\Mohit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mohit\\Desktop\\Coding\\leetcode\\leetCode\\leetCode\\obj\\",
+        "projectPath": "C:\\Users\\MOH\\Desktop\\Privat\\leetcode_problems\\leetCode\\leetCode\\leetCode.csproj",
+        "packagesPath": "C:\\Users\\MOH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MOH\\Desktop\\Privat\\leetcode_problems\\leetCode\\leetCode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mohit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MOH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
