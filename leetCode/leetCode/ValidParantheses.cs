@@ -49,7 +49,7 @@ namespace leetCode
                     stack.Push(c);
                 }
 
-                else if (c == ')' || c == ']' || c == '}') { 
+                else if (c == ')' || c == ']' || c == '}') {
 
                     if(stack.Count == 0) { return false; };
 
