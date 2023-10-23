@@ -18,7 +18,7 @@ namespace leetCode
         }
 
 
-        public TreeNode InvertTree(TreeNode root)
+        public static TreeNode InvertTree(TreeNode root)
         {
             if (root == null)
             {
@@ -33,8 +33,8 @@ namespace leetCode
             
             root.right = tmp;
 
-            this.InvertTree(root.left);
-            this.InvertTree(root.right);
+            InvertTree(root.left);
+            InvertTree(root.right);
 
             return root;
 
