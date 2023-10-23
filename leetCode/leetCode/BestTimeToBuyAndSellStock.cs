@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
@@ -11,24 +12,21 @@ namespace leetCode
     {
         public static int MaxProfit(int[] prices)
         {
-            // find index of smallest int
-            // beginn loop starting at smallest index
+            int minPrice = prices[0];
+            int maxProfit = 0;
 
-            int temp = 0;
-            int result = 0;
-            for (int i = 0; i < prices.Length-1; i++)
+            for (int i = 0; i < prices.Length; i++)
             {
-                for (global::System.Int32 j = i+1; j < prices.Length; j++)
+                if (prices[i] < minPrice)
                 {
-                    result = prices[j] - prices[i];
-                    if(result > temp)
-                    {
-                        temp = result;
-                    }
+                    minPrice = prices[i];
+                }
+                else if ((prices[i] - minPrice) > maxProfit)
+                {
+                    maxProfit = prices[i] - minPrice;  
                 }
             }
-            return temp;
-            
+            return maxProfit;
         }
     }
 }
