@@ -1,18 +1,10 @@
-﻿using System;
+﻿using Microsoft.Azure.Cosmos.Linq;
+using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.ObjectModel;
+using System;
 
 
 namespace leetCode
 {
-    public class InvertBinaryTree
-
-    {
-        public static TreeNode InvertTree(TreeNode root)
-        {
-            return null;
-        }
-
-        
-    }
     public class TreeNode
     {
         public int val;
@@ -33,9 +25,16 @@ namespace leetCode
                 return null;
             }
 
-            TreeNode temp = root.left;
-            root.left = InvertTree(root.right);
-            root.right = InvertTree(temp);
+            TreeNode tmp = new TreeNode();
+
+            tmp = root.left;
+
+            root.left = root.right;
+            
+            root.right = tmp;
+
+            this.InvertTree(root.left);
+            this.InvertTree(root.right);
 
             return root;
 

@@ -7,16 +7,49 @@ namespace test
     [TestClass]
     public class InvertBinaryTreeTests
     {
-        private readonly InvertBinaryTree _InvertBinaryTree = new InvertBinaryTree();
 
-        [TestMethod]
-        [DataRow(new int[] { 4, 2, 7, 1, 3, 6, 9 }, new int[] { 4, 7, 2, 9, 6, 3, 1 })]
-        [DataRow(new int[] { 2, 1, 3 }, new int[] { 2, 3, 1 })]
-        [DataRow(new int[] { }, new int[] { })]
-        public void TestInvertBinaryTree(int?[] input, int?[] expectedOutput)
+
+        [DataTestMethod]
+        [DynamicData(nameof(GetTestData), DynamicDataSourceType.Method)]
+        public void TestInvertBinaryTree(TreeNode root, TreeNode expected)
         {
-            
+            TreeNode result = TreeNode.InvertTree(root);
+            AssertTreesAreEqual(expected, result);
         }
+
+        public static IEnumerable<object[]> GetTestData()
+        {
+            yield return new object[]
+            {
+                // [4,2,7,1,3,6,9] => [4,7,2,9,6,3,1]
+                new TreeNode(4, new TreeNode(2, new TreeNode(7, new TreeNode(1), new TreeNode(3)), new TreeNode(6, new TreeNode(9)))),
+                new TreeNode(4, new TreeNode(7, new TreeNode(9), new TreeNode(6)), new TreeNode(2, new TreeNode(3), new TreeNode(1)))
+            };
+
+            yield return new object[]
+            {
+            new TreeNode(2, new TreeNode(1), new TreeNode(3)),
+            new TreeNode(2, new TreeNode(3), new TreeNode(1))
+            };
+            yield return new object[] { null, null };
+            }
+
+        private void AssertTreesAreEqual(TreeNode expected, TreeNode actual)
+        {
+            if (expected == null && actual == null) return;
+
+            Assert.IsNotNull(expected);
+            Assert.IsNotNull(actual);
+
+            Assert.AreEqual(expected.val, actual.val);
+
+            AssertTreesAreEqual(expected.left, actual.left);
+            AssertTreesAreEqual(expected.right, actual.right);
+        }
+
+
+
+
 
     }
 }
