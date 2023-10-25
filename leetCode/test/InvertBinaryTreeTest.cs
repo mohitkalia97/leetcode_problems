@@ -7,13 +7,12 @@ namespace test
     [TestClass]
     public class InvertBinaryTreeTests
     {
-
-
         [DataTestMethod]
         [DynamicData(nameof(GetTestData), DynamicDataSourceType.Method)]
         public void TestInvertBinaryTree(TreeNode root, TreeNode expected)
         {
             TreeNode result = TreeNode.InvertTree(root);
+
             AssertTreesAreEqual(expected, result);
         }
 

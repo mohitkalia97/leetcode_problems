@@ -10,7 +10,8 @@ namespace test
     [TestClass]
     public class ValidAnagramTest
     {
-        [DynamicData(nameof(GetTestData),DynamicDataSourceType.Method )]
+        [DataTestMethod]
+        [DynamicData(nameof(GetTestData),DynamicDataSourceType.Method)]
         public void isAnagramTest(string s, string t, bool ex)
         {
 
@@ -19,7 +20,7 @@ namespace test
             Assert.AreEqual(res, ex);
         }
 
-        public static IEnumerable<object> GetTestData()
+        public static IEnumerable<object[]> GetTestData()
         {
             yield return new object[]
             {
