@@ -19,16 +19,17 @@ namespace test
             Assert.AreEqual(res, ex);
         }
 
-        public IEnumerable<object[]> GetTestData()
+        public static IEnumerable<object[]> GetTestData()
         {
             yield return new object[]
             {
-                new int[,]{ { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } }, 1, 1, 2, new int[,]{ {0, 0, 0} , {0, 0, 0}, {0, 0, 0} }             
+                new int[][]{ new int[]{ 1, 1, 1 }, new int[] { 1, 1, 0 }, new int[] { 1, 0, 1 } }, 1, 1, 2, 
+                new int[][]{ new int[] { 0, 0, 0} , new int[] { 0, 0, 0}, new int[] { 0, 0, 0} }             
             };
 
             yield return new object[]
            {
-                new int[,]{ { 0, 0, 0 }, { 0, 0, 0 } }, 0, 0, 0, new int[,]{ {0, 0, 0} , {0, 0, 0} }
+                new int[][]{ new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } }, 0, 0, 0, new int[][]{ new int[] { 0, 0, 0} , new int[] { 0, 0, 0} }
            };
         }
     }
