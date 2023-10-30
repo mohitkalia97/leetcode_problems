@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "qgUiLtJnk92CtY+tuuejvbU8m9ypoXgykceoyGISc7UCkOLPxD8HpM/Z2NmpnkGidnnYDShYH9Qn8wWFA+6Vpw==",
+  "dgSpecHash": "93CCLVhemyjU1Q3kkUu0IYdnaK6qHqnAJODuYtpPhQsjrAKEQkxsDud9HTL/UEE6c2putp5/9Cy03HkN5H0nzg==",
   "success": true,
   "projectFilePath": "C:\\Users\\MOH\\Desktop\\Privat\\leetcode_problems\\leetCode\\test\\test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MOH\\.nuget\\packages\\azure.core\\1.19.0\\azure.core.1.19.0.nupkg.sha512",
     "C:\\Users\\MOH\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
+    "C:\\Users\\MOH\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
     "C:\\Users\\MOH\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\MOH\\.nuget\\packages\\microsoft.azure.cosmos\\3.35.4\\microsoft.azure.cosmos.3.35.4.nupkg.sha512",
     "C:\\Users\\MOH\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",

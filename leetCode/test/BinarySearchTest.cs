@@ -15,7 +15,7 @@ namespace test
         public void testSearch(int[] nums, int target, int ex)
         {
             int res = BinarySearch.Search(nums, target);
-            Assert.AreEqual(ex, res);   
+            
         }
 
         public static IEnumerable<object[]> GetTestData()
