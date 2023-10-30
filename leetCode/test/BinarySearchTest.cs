@@ -27,6 +27,9 @@ namespace test
             yield return new object[] {
                 new int[]{-1,0,3,5,9,12}, 2, -1
             };
+            yield return new object[] {
+                new int[]{-1,0,3,5,9,12}, 2, -1
+            };
         }
     }
 }

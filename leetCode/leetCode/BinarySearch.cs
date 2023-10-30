@@ -8,7 +8,6 @@ namespace leetCode
 {
     public class BinarySearch
     {
-        //[-1,0,3,5,9,12] //target = 9
         public static int Search(int[] nums, int target)
         {
             int start = 0;                        
@@ -23,7 +22,7 @@ namespace leetCode
                     return mid;
                 }
 
-                else if (nums[mid] > target) 
+                else if (nums[mid] < target) 
                 {
                     start = mid + 1; 
                 }
