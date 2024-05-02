@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace leetCode
 {
-    public class RomanToInteger
+    public  class RomanToInteger
     {
-        public int RomanToInt(string s)
+        public static int RomanToInt(string s)
         {
 
             Dictionary<char, int> dic = new Dictionary<char, int>() {
