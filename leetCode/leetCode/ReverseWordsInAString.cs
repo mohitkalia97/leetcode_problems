@@ -25,7 +25,7 @@ namespace leetCode
 {
     public class ReverseWordsInAString
     {
-            public string ReverseWords(string s)
+            public static string ReverseWords(string s)
             {
                 string[] wordsArray = s.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 Array.Reverse(wordsArray);
