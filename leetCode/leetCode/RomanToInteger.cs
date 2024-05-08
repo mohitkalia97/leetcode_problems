@@ -22,7 +22,8 @@ namespace leetCode
             { 'C',  100  },
             { 'D',  500  },
             { 'M',  1000 }
-        };
+
+            };
 
             int count = 0;
             int current;
